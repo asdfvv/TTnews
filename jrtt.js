@@ -75,8 +75,8 @@ var invited =''
 var hour=''
 var minute=''
 if ($.isNode()) {
-   hour = new Date( new Date().getTime() + 8 * 60 * 60 * 1000 ).getHours();
-   minute = new Date( new Date().getTime() + 8 * 60 * 60 * 1000 ).getMinutes();
+   hour = new Date( new Date().getTime() ).getHours();
+   minute = new Date( new Date().getTime() ).getMinutes();
 }else{
    hour = (new Date()).getHours();
    minute = (new Date()).getMinutes();
