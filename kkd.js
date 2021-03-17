@@ -41,7 +41,7 @@ kkdcookie = type=http-request,pattern=^https://api.yuncheapp.cn/pearl-incentive/
 const jsname='快看点'
 const $ = Env(jsname)
 const notify = $.isNode() ? require('./sendNotify') : '';
-$.idx = ($.idx = ($.getval("kkdcount") || "1") - 1) > 0 ? `${$.idx + 1}` : ""; // 账号扩展字符
+$.idx = ($.idx = ($.getval("2") || "1") - 1) > 0 ? `${$.idx + 1}` : ""; // 账号扩展字符
 const kkdheaderArr=[]
 const kkdcookieArr=[]
 const kkdsignArr=[]
