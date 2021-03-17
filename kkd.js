@@ -72,9 +72,9 @@ if (isGetCookie) {
    $.done()
 } 
 if ($.isNode()) {
-  if (process.env.KKDHEADER && process.env.KKDHEADER.indexOf('#') > -1) {
-   kkdheader = process.env.KKDHEADER.split('#');
-   console.log(`您选择的是用"#"隔开\n`)
+  if (process.env.KKDHEADER && process.env.KKDHEADER.indexOf('|&|') > -1) {
+   kkdheader = process.env.KKDHEADER.split('|&|');
+   console.log(`您选择的是用"|&|"隔开\n`)
   }
   else if (process.env.KKDHEADER && process.env.KKDHEADER.indexOf('\n') > -1) {
    kkdheader = process.env.KKDHEADER.split('\n');
