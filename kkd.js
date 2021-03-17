@@ -82,16 +82,16 @@ if ($.isNode()) {
   } else {
    kkdheader = process.env.KKDHEADER.split()
   };
-  if (process.env. KKDCOOKIE&& process.env.KKDCOOKIE.indexOf('#') > -1) {
-   kkdcookie = process.env.KKDCOOKIE.split('#');
+  if (process.env. KKDCOOKIE&& process.env.KKDCOOKIE.indexOf('|') > -1) {
+   kkdcookie = process.env.KKDCOOKIE.split('|');
   }
   else if (process.env.KKDCOOKIE && process.env.KKDCOOKIE.split('\n').length > 0) {
    kkdcookie = process.env.KKDCOOKIE.split('\n');
   } else  {
    kkdcookie = process.env.KKDCOOKIE.split()
   };
-  if (process.env. KKDSIGN&& process.env.KKDSIGN.indexOf('#') > -1) {
-   kkdsign = process.env.KKDSIGN.split('#');
+  if (process.env. KKDSIGN&& process.env.KKDSIGN.indexOf('|') > -1) {
+   kkdsign = process.env.KKDSIGN.split('|');
   }
   else if (process.env.KKDSIGN && process.env.KKDSIGN.split('\n').length > 0) {
    kkdsign = process.env.KKDSIGN.split('\n');
